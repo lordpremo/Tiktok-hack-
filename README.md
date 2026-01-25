@@ -1,11 +1,16 @@
 # LORD PREMO TikTok Hack Command
 
-## Installation
+## 🚀 Installation (Termux)
 ```bash
-apt update && apt upgrade
-pkg install python python-pip git -y
-pip install colorama requests
+apt update
+apt upgrade
+pkg update
+pkg upgrade
+pkg install python
+pkg install python-pip
+pkg install git
+pip install colorama 
+pip install requests
 git clone https://github.com/lordpremo/Tiktok-hack-
 cd Tiktok-hack-
-chmod +x hack
-mv hack $PREFIX/bin/
+python hack.py targetname
