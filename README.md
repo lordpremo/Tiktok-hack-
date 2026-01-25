@@ -1,4 +1,4 @@
-#  TikTok Hack 
+# LORD PREMO TikTok Hack Command
 
 ## Installation
 ```bash
