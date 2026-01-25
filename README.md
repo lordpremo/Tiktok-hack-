@@ -1,4 +1,4 @@
-# EMOPREMOO PREMO TikTok Hack Command
+#  TikTok Hack 
 
 ## Installation
 ```bash
