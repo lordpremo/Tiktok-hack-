@@ -17,9 +17,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# KEY ITATOKA ENVIRONMENT VARIABLES
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-MODEL_NAME = "llama3-8b-8192"  # model ya haraka na nzuri
+MODEL_NAME = "llama3-8b"  # MODEL MPYA, SAHIHI
 
 @app.get("/")
 def home():
@@ -87,6 +89,7 @@ async def chat(message: str = Form(...)):
         reply = data["choices"][0]["message"]["content"]
 
         return {"reply": reply}
+
     except Exception as e:
         return JSONResponse(
             {"error": f"Hitilafu wakati wa kuwasiliana na Groq: {str(e)}"},
