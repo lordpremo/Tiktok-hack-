@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Broken AI Chat API",
-    description="Simple chat API powered by Groq (Llama 3).",
+    description="Simple chat API powered by Groq (Llama 3.1).",
     version="1.0.0"
 )
 
@@ -21,7 +21,7 @@ app.add_middleware(
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-MODEL_NAME = "llama3-8b"  # MODEL MPYA, SAHIHI
+MODEL_NAME = "llama-3.1-8b-instant"  # MODEL MPYA SAHIHI
 
 @app.get("/")
 def home():
