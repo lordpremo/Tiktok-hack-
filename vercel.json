@@ -7,3 +7,4 @@
     { "src": "/chat", "dest": "api/chat.py" },
     { "src": "/", "dest": "api/chat.py" }
   ]
+}
